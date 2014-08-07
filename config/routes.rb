@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'pages/about'
 
   get 'about', to: 'pages#about'
 
   get 'pages/credits'
 
-  get 'pages', to: 'pages#credits'
+  get 'credits', to: 'pages#credits'
 
   resources :transcriptions
 
